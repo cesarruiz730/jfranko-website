@@ -152,33 +152,31 @@ document.querySelectorAll('.project-card').forEach(card => {
     });
 });
 
-// Formulario de contacto
+// Formulario de contacto - Validación sin bloquear el envío
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
         // Obtener datos del formulario
-        const formData = new FormData(contactForm);
-        const name = contactForm.querySelector('input[type="text"]').value;
-        const email = contactForm.querySelector('input[type="email"]').value;
-        const subject = contactForm.querySelector('input[placeholder="Asunto del proyecto"]').value;
-        const message = contactForm.querySelector('textarea').value;
+        const name = contactForm.querySelector('input[name="name"]').value;
+        const email = contactForm.querySelector('input[name="email"]').value;
+        const subject = contactForm.querySelector('input[name="subject"]').value;
+        const message = contactForm.querySelector('textarea[name="message"]').value;
         
         // Validación básica
         if (!name || !email || !message) {
+            e.preventDefault(); // Solo prevenir si hay errores
             showNotification('Por favor, completa todos los campos obligatorios.', 'error');
             return;
         }
         
         if (!isValidEmail(email)) {
+            e.preventDefault(); // Solo prevenir si hay errores
             showNotification('Por favor, introduce un email válido.', 'error');
             return;
         }
         
-        // Simular envío (aquí conectarías con tu backend)
-        showNotification('¡Mensaje enviado correctamente! Te contactaremos pronto.', 'success');
-        contactForm.reset();
+        // Si todo está bien, permitir que Netlify procese el formulario
+        // No llamamos a e.preventDefault() aquí
     });
 }
 
