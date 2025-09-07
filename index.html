@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joan Franco (JFRANKO) - Productor Musical</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Joan Franco</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#musica">Música</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">JFRANKO</span><br>
+                    Productor & Compositor
+                </h1>
+                <p class="hero-subtitle">
+                    Productor y compositor español-argentino especializado en música urbana. 
+                    Combinando raíces latinas con influencias globales para crear sonidos únicos.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+                    <a href="#contacto" class="btn-secondary">Colaborar</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="music-visualizer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conoce al artista</h2>
+                <p>Una pasión por la música que se convierte en profesión</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Mi historia musical</h3>
+                    <p>
+                        Joan Franco Medina (JFRANKO) es un productor y compositor español-argentino nacido en Marbella (Málaga). 
+                        Desde joven tuvo claro que su vida giraría en torno a la música, formándose en la Universidad Loyola 
+                        y colaborando con artistas emergentes de la escena urbana.
+                    </p>
+                    <p>
+                        Con varios álbumes publicados y una carrera en pleno crecimiento, ha conseguido consolidarse como 
+                        productor internacional. Su reciente viaje a Canadá abrió nuevas puertas y contactos que se reflejarán 
+                        en su próxima mixtape, prevista para diciembre de 2025.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>202</h4>
+                            <p>Oyentes mensuales</p>
+                        </div>
+                        <div class="stat">
+                            <h4>10+</h4>
+                            <p>Releases publicados</p>
+                        </div>
+                        <div class="stat">
+                            <h4>138</h4>
+                            <p>Seguidores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="artist-photo">
+                        <img src="images/joan-franco.png" alt="Joan Franco (JFRANKO)" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Proyectos destacados</h2>
+                <p>Una selección de mis trabajos más recientes</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-audio="music/flor-de-loto.mp3">
+                    <div class="project-image">
+                        <img src="images/flor-de-loto.jpg" alt="FLOR DE LOTO" />
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <audio class="project-audio" preload="none">
+                            <source src="music/flor-de-loto.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="project-info">
+                        <h3>FLOR DE LOTO</h3>
+                        <p>EP - Música Urbana</p>
+                        <span class="year">2025</span>
+                    </div>
+                </div>
+                <div class="project-card" data-audio="music/matador.mp3">
+                    <div class="project-image">
+                        <img src="images/matador.jpg" alt="MATADOR" />
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <audio class="project-audio" preload="none">
+                            <source src="music/matador.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="project-info">
+                        <h3>MATADOR</h3>
+                        <p>EP - Trap</p>
+                        <span class="year">2025</span>
+                    </div>
+                </div>
+                <div class="project-card" data-audio="music/el-aleron.mp3">
+                    <div class="project-image">
+                        <img src="images/el-aleron.jpg" alt="EL ALERÓN" />
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <audio class="project-audio" preload="none">
+                            <source src="music/el-aleron.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="project-info">
+                        <h3>EL ALERÓN</h3>
+                        <p>Single - Música Urbana</p>
+                        <span class="year">2025</span>
+                    </div>
+                </div>
+                <div class="project-card" data-audio="music/Rookie.mp3">
+                    <div class="project-image">
+                        <img src="images/Rookie.jpeg" alt="Rookie" />
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <audio class="project-audio" preload="none">
+                            <source src="music/Rookie.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="project-info">
+                        <h3>Rookie</h3>
+                        <p>Single - feat. Perii & Cuervo</p>
+                        <span class="year">2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Música -->
+    <section id="musica" class="music">
+        <div class="container">
+            <div class="section-header">
+                <h2>Escucha mi música</h2>
+                <p>Encuentra mis creaciones en todas las plataformas</p>
+            </div>
+            <div class="platforms">
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fab fa-spotify"></i>
+                    </div>
+                    <h3>Spotify</h3>
+                    <p>Escucha mis tracks más populares</p>
+                    <a href="https://open.spotify.com/intl-es/artist/1GfRHZxzV5pEaIJXW3e7uv?si=Wewp94S0RaGd4L8zh5euVg" class="platform-link" target="_blank">Ir a Spotify</a>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <h3>Apple Music</h3>
+                    <p>Disfruta de alta calidad de audio</p>
+                    <a href="https://music.apple.com/es/artist/jfranko/1528340409" class="platform-link" target="_blank">Ir a Apple Music</a>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>YouTube</h3>
+                    <p>Videos musicales y contenido exclusivo</p>
+                    <a href="https://youtube.com/@jfranko_01?si=jxAlWCpOpajr4ON_" class="platform-link" target="_blank">Ver canal</a>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Sígueme para contenido exclusivo</p>
+                    <a href="https://instagram.com/jfranko_01" class="platform-link" target="_blank">Seguir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Tienes un proyecto en mente?</h2>
+                <p>Hablemos sobre tu próxima creación musical</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Colaboremos juntos</h3>
+                    <p>
+                        Estoy siempre abierto a nuevos proyectos y colaboraciones. 
+                        Si tienes una idea musical que quieres desarrollar, no dudes en contactarme.
+                    </p>
+                    <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>joanfrancobusiness@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Marbella, Málaga</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-music"></i>
+                        <span>Productor & Compositor</span>
+                    </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://instagram.com/jfranko_01" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/joanfranco_01" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://open.spotify.com/intl-es/artist/1GfRHZxzV5pEaIJXW3e7uv?si=Wewp94S0RaGd4L8zh5euVg" target="_blank"><i class="fab fa-spotify"></i></a>
+                        <a href="https://youtube.com/@jfranko_01?si=jxAlWCpOpajr4ON_" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div class="form-group" style="display: none;">
+                        <input name="bot-field" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Asunto del proyecto">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Cuéntame sobre tu proyecto musical..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Joan Franco</h3>
+                    <p>JFRANKO - Productor Musical</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobre-mi">Sobre Mí</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#musica">Música</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Joan Franco (JFRANKO). Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
